@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-DM: "DM Sans", sans-serif; 
+  --color-deepBlack: #262626;
+  --color-halkaGray: #6D6D6D;
+  --spacing-myContainer: 1320px; 
+}
