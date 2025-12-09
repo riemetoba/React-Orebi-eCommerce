@@ -74,9 +74,6 @@ const Header = () => {
         </Container>
       </div>
       {/* // Search and Cart Part End */}
-      {/* Banner part strat */}
-
-      {/* Banner part End */}
     </>
   );
 };

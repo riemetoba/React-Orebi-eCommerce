@@ -1,4 +1,5 @@
 
+import Ads from "../layouts/Ads";
 import Banner from "../layouts/Banner";
 import Information from "../layouts/Information";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <>
     <Banner/>
     <Information/>
+    <Ads/>
     </>
   );
 };
