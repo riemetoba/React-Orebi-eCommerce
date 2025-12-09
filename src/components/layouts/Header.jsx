@@ -7,8 +7,7 @@ import { HiBars2 } from "react-icons/hi2";
 import { IoPersonSharp } from "react-icons/io5";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
-
-
+import { IoMdSearch } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -50,12 +49,15 @@ const Header = () => {
               <HiBars2 className="font-extrabold text-[24px] mr-2.5" />
               Shop by Category
             </div>
-            <div>
+            <div className="relative">
               <input
                 type="text"
                 placeholder="Search Product"
-                className="bg-white w-[500px] h-[45px] pl-5 outline-1"
+                className="bg-white w-[500px] h-[45px] pl-5 outline-1 outline-halkagray"
               />
+              <div className="absolute top-1/3 right-4">
+                <IoMdSearch />
+              </div>
             </div>
             <div className="flex items-center">
               <div>
@@ -73,7 +75,7 @@ const Header = () => {
       </div>
       {/* // Search and Cart Part End */}
       {/* Banner part strat */}
-      
+
       {/* Banner part End */}
     </>
   );
