@@ -9,7 +9,7 @@ import { Link, Links } from "react-router-dom"
 
 const Ads = () => {
   return (
-    <div className="py-[140px]">
+    <div className="pt-[140px] pb-[100px]">
          <Container>
             <Flex className="justify-between gap-x-[30px]">
                 <Link to={"/shop"}>
