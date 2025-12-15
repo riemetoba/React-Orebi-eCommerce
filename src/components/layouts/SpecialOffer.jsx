@@ -16,13 +16,13 @@ const SpecialOffer = () => {
                 <Product productImg={specialOne} badgeText={"New"}productTitle={"Basic Crew Neck Tee"} productPrice={"$44.00"}/>
             </div>
             <div className='w-1/4'>
-                <Product  productImg={specialTwo} badgeText={"New"}productTitle={"Basic Crew Neck Tee"} productPrice={"$44.00"}/>
+                <Product  productImg={specialTwo} badgeText={"25%"}productTitle={"Basic Crew Neck Tee"} productPrice={"$44.00"}/>
             </div>
             <div className='w-1/4'>
                 <Product productImg={specialThree} badgeText={"New"}productTitle={"Basic Crew Neck Tee"} productPrice={"$44.00"}/>
             </div>
             <div className='w-1/4'>
-                <Product productImg={specialFour} badgeText={"New"} productTitle={"Basic Crew Neck Tee"} productPrice={"$44.00"}/>
+                <Product productImg={specialFour} badgeText={"30%"} productTitle={"Basic Crew Neck Tee"} productPrice={"$44.00"}/>
             </div>
         </Flex>
     </Container>
