@@ -6,7 +6,7 @@ import { HiOutlineRefresh } from "react-icons/hi";
 
 const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
   return (
-    <div className="relative group">
+    <div className="relative group mx-5">
       <Image src={productImg} />
       <Badge badgeText={badgeText} className={"absolute top-5 left-5"} />
       <div className="bg-[#ffffff] p-6 opacity-0 group-hover:opacity-100 transition duration-300 bottom-10 left-0 absolute w-full">
