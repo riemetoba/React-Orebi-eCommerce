@@ -44,7 +44,7 @@ const Bestsellers = () => {
           <div>
             <Product
               productImg={bestSellersThree}
-              badgeText={"New"}
+              badgeText={"70%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
             />
@@ -60,7 +60,7 @@ const Bestsellers = () => {
           <div>
             <Product
               productImg={bestSellersTwo}
-              badgeText={"New"}
+              badgeText={"20%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
             />

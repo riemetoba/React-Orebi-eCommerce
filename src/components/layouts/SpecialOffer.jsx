@@ -35,7 +35,7 @@ const SpecialOffer = () => {
           <div>
             <Product
               productImg={specialTwo}
-              badgeText={"New"}
+              badgeText={"40%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
             />
@@ -51,7 +51,7 @@ const SpecialOffer = () => {
           <div>
             <Product
               productImg={specialFour}
-              badgeText={"New"}
+              badgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
             />
