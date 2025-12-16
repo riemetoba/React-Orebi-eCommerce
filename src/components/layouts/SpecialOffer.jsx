@@ -1,16 +1,16 @@
-import Container from '../Container'
-import Product from '../Product'
-import specialOne from "/src/assets/specialOne.png"
-import specialTwo from "/src/assets/specialTwo.png"
-import specialThree from "/src/assets/specialThree.png"
-import specialFour from "/src/assets/specialFour.png"
+import Container from "../Container";
+import Product from "../Product";
+import specialOne from "/src/assets/specialOne.png";
+import specialTwo from "/src/assets/specialTwo.png";
+import specialThree from "/src/assets/specialThree.png";
+import specialFour from "/src/assets/specialFour.png";
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import NextArrow from "../NextArrow";
 import PrevArrow from "../PrevArrow";
 
 const SpecialOffer = () => {
-    var settings = {
+  var settings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -21,61 +21,65 @@ const SpecialOffer = () => {
   };
   return (
     <>
-    <Container>
-        <h2 className='text-[39px] font-DM font-bold pb-[55px]'>Special Offers</h2>
-       <Slider {...settings}>
-          <div>
-            <Product
-              productImg={specialOne}
-              badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div>
-            <Product
-              productImg={specialTwo}
-              badgeText={"40%"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div>
-            <Product
-              productImg={specialThree}
-              badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div>
-            <Product
-              productImg={specialFour}
-              badgeText={"10%"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div>
-            <Product
-              productImg={specialOne}
-              badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-          <div>
-            <Product
-              productImg={specialThree}
-              badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-            />
-          </div>
-        </Slider>
-    </Container>
+      <Container>
+        <h2 className="text-[39px] font-DM font-bold pb-[55px]">
+          Special Offers
+        </h2>
+        <div className="-mx-4">
+          <Slider {...settings}>
+            <div>
+              <Product
+                productImg={specialOne}
+                badgeText={"New"}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$44.00"}
+              />
+            </div>
+            <div>
+              <Product
+                productImg={specialTwo}
+                badgeText={"40%"}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$44.00"}
+              />
+            </div>
+            <div>
+              <Product
+                productImg={specialThree}
+                badgeText={"New"}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$44.00"}
+              />
+            </div>
+            <div>
+              <Product
+                productImg={specialFour}
+                badgeText={"10%"}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$44.00"}
+              />
+            </div>
+            <div>
+              <Product
+                productImg={specialOne}
+                badgeText={"New"}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$44.00"}
+              />
+            </div>
+            <div>
+              <Product
+                productImg={specialThree}
+                badgeText={"New"}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$44.00"}
+              />
+            </div>
+          </Slider>
+        </div>
+      </Container>
     </>
-  )
-}
+  );
+};
 
-export default SpecialOffer
+export default SpecialOffer;

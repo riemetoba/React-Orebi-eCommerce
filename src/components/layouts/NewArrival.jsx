@@ -26,7 +26,8 @@ const NewArrival = () => {
         <h2 className="text-[39px] font-DM font-bold pb-[55px]">
           New Arrivals
         </h2>
-        <Slider {...settings}>
+       <div className="-mx-4">
+         <Slider {...settings}>
           <div>
             <Product
               productImg={newArrivalsOne}
@@ -76,6 +77,7 @@ const NewArrival = () => {
             />
           </div>
         </Slider>
+       </div>
       </Container>
     </>
   );
