@@ -42,10 +42,10 @@ const Header = () => {
       </div>
       {/* // Logo and Navigation part End */}
       {/* // Search and Cart Part Start */}
-      <div className="py-6 bg-[#F5F5F3]">
+      <div className="py-6 bg-[#F5F5F3] border-light-gray border">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="flex">
+            <div className="flex border-light-gray border">
               <HiBars2 className="font-extrabold text-[24px] mr-2.5" />
               Shop by Category
             </div>
