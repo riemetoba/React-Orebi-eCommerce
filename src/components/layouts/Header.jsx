@@ -53,7 +53,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search Product"
-                className="bg-white w-[500px] h-[45px] pl-5 outline-1 outline-halkagray"
+                className="bg-white w-[500px] h-[45px] pl-5 border-light-gray border"
               />
               <div className="absolute top-1/3 right-4">
                 <IoMdSearch />
