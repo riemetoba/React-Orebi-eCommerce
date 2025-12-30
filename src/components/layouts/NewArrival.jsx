@@ -20,7 +20,7 @@ const NewArrival = () => {
       setAllData(data.data.products);
     }
     alldatas();
-  });
+  }); 
   var settings = {
     dots: false,
     infinite: true,
