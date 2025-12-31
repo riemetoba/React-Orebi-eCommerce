@@ -7,7 +7,7 @@ const PrevArrow = (props) => {
       className={'absolute left-5 top-1/2 z-40 -translate-y-1/2'}
       onClick={onClick}
     >
-      <FaArrowCircleLeft className="text-4xl text-halkaGray"/>
+      <FaArrowCircleLeft className="text-4xl text-halkaGray cursor-pointer"/>
     </div>
   );
 };

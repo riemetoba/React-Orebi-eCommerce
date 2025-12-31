@@ -100,7 +100,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-6">
               <div
-                className="flex items-center gap-x-2 relative"
+                className="flex items-center gap-x-2 relative cursor-pointer"
                 onClick={() => setUserShow(!userShow)}
               >
                 <IoPersonSharp />
@@ -121,7 +121,7 @@ const Header = () => {
               {/* User Dropdown  */}
               {/* Cart and Dropdown  */}
               <div className="relative" onClick={() => setCartShow(!cartShow)}>
-                <FaShoppingCart />
+                <FaShoppingCart className="cursor-pointer"/>
                 {cartShow && (
                   <div className="w-[360px] h-[260px] absolute right-0 top-6">
                     <div className="bg-[#F5F5F3] py-5 px-4">
@@ -133,7 +133,7 @@ const Header = () => {
                             <h5 className="pt-3">$44.00</h5>
                           </div>
                         </div>
-                        <div className="">
+                        <div className="cursor-pointer">
                           <RxCross2 />
                         </div>
                       </div>

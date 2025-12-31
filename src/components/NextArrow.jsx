@@ -7,7 +7,7 @@ const NextArrow = (props) => {
       className={'absolute right-5 top-1/2 -translate-y-1/2'}
       onClick={onClick}
     >
-      <FaArrowCircleRight className="text-4xl text-halkaGray"/>
+      <FaArrowCircleRight className="text-4xl text-halkaGray cursor-pointer"/>
     </div>
   );
 };
