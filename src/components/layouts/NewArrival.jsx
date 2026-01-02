@@ -13,13 +13,15 @@ import axios from "axios";
 //import "slick-carousel/slick/slick-theme.css";
 
 const NewArrival = () => {
+  // API anar jonno ekhan theke kaj shuru kora hoyeche
   let [allData, setAllData] = useState([]);
-  useEffect(() => {
+  useEffect(() => {     //ekhane useEffect use kora hoyeche side effect reduce korar jonno. 
     async function alldatas() {
-      let data = await axios.get("https://dummyjson.com/products");
+      let data = await axios.get("https://dummyjson.com/products");      // etar side effect reduce korar jonnoi useEffect k use kora hoyeche
       setAllData(data.data.products);
     }
     alldatas();
+    // API anar jonno function er kaj ekhane shes holo
   }); 
   var settings = {
     dots: false,
