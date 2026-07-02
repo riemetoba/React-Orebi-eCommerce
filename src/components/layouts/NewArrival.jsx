@@ -5,6 +5,7 @@ import newArrivalsTwo from "/src/assets/newArrivalsTwo.png";
 import newArrivalsThree from "/src/assets/newArrivalsThree.png";
 import newArrivalsFour from "/src/assets/newArrivalsFour.png";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"; 
 import Slider from "react-slick";
 import NextArrow from "../NextArrow";
 import PrevArrow from "../PrevArrow";
