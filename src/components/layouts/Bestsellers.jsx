@@ -1,116 +1,105 @@
 import Container from "../Container";
-import Flex from "../Flex";
 import Product from "../Product";
 import bestSellersOne from "/src/assets/bestSellersOne.png";
 import bestSellersTwo from "/src/assets/bestSellersTwo.png";
 import bestSellersThree from "/src/assets/bestSellersThree.png";
 import bestSellersFour from "/src/assets/bestSellersFour.png";
-import "slick-carousel/slick/slick.css";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import NextArrow from "../NextArrow";
 import PrevArrow from "../PrevArrow";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Bestsellers = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      }
-    ]
-  };
-
   return (
     <>
       <Container>
         <h2 className="text-[24px] font-DM font-bold pb-10 lg:pb-[55px] lg:text-[39px] pt-15 md:pt-25 px-4 md:px-0">
           Our Bestsellers
         </h2>
-        {/* ========= */}
-        <div className="mx-0 md:-mx-4 px-2 md:px-0 overflow-hidden">
-          <Slider {...settings}>
-            {/* ======== */}
-            <div className="px-1.5 md:px-4">
+        <div className="relative px-4 md:px-0 group">
+          <Swiper
+            modules={[Navigation]}
+            loop={true}
+            spaceBetween={0}
+            slidesPerView={1}
+            navigation={{
+              nextEl: ".swiper-button-next-bestsellers",
+              prevEl: ".swiper-button-prev-bestsellers",
+            }}
+            breakpoints={{
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              769: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1025: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
+            className="mySwiper"
+          >
+            <SwiperSlide>
               <Product
                 productImg={bestSellersOne}
                 badgeText={"New"}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$44.00"}
               />
-            </div>
-             {/* ======== */}
-            <div className="px-1.5 md:px-4">
+            </SwiperSlide>
+            <SwiperSlide>
               <Product
                 productImg={bestSellersTwo}
                 badgeText={"New"}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$44.00"}
               />
-            </div>
-             {/* ======== */}
-            <div className="px-1.5 md:px-4">
+            </SwiperSlide>
+            <SwiperSlide>
               <Product
                 productImg={bestSellersThree}
                 badgeText={"70%"}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$44.00"}
               />
-            </div>
-             {/* ======== */}
-            <div className="px-1.5 md:px-4">
+            </SwiperSlide>
+            <SwiperSlide>
               <Product
                 productImg={bestSellersFour}
                 badgeText={"New"}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$44.00"}
               />
-            </div>
-             {/* ======== */}
-            <div className="px-1.5 md:px-4">
+            </SwiperSlide>
+            <SwiperSlide>
               <Product
                 productImg={bestSellersTwo}
                 badgeText={"20%"}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$44.00"}
               />
-            </div>
-             {/* ======== */}
-            <div className="px-1.5 md:px-4">
+            </SwiperSlide>
+            <SwiperSlide>
               <Product
                 productImg={bestSellersThree}
                 badgeText={"New"}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$44.00"}
               />
-            </div>
-             {/* ======== */}
-          </Slider>
+            </SwiperSlide>
+          </Swiper>
+
+          <div className="swiper-button-prev-bestsellers hidden md:block absolute left-0 top-[40%] -translate-y-1/2 z-10 cursor-pointer">
+            <PrevArrow />
+          </div>
+          <div className="swiper-button-next-bestsellers hidden md:block absolute right-0 top-[40%] -translate-y-1/2 z-10 cursor-pointer">
+            <NextArrow />
+          </div>
         </div>
       </Container>
     </>
