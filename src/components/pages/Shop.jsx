@@ -39,14 +39,14 @@ const Shop = () => {
     <div>
       <Container>
         <h3 className="pt-40 font-DM text-5xl font-bold text-deepBlack">
-          Products
+          Shop
         </h3>
         <div className="flex items-center gap-x-4 pt-8 text-[12px] font-DM text-[#767676]">
           <div className="flex items-center gap-4">
             <h6>Home</h6>
             <MdKeyboardArrowRight className="pt-0.5" />
           </div>
-          <div className="">Products</div>
+          <div className="">Shop</div>
         </div>
         <Flex className={"pt-15 items-start gap-x-6"}>
           {/* Flex left start  */}
