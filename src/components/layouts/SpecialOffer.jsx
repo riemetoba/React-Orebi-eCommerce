@@ -94,10 +94,10 @@ const SpecialOffer = () => {
             </SwiperSlide>
           </Swiper>
 
-          <div className="swiper-button-prev-special hidden md:block absolute left-0 top-[40%] -translate-y-1/2 z-10 cursor-pointer">
+          <div className="swiper-button-prev-special hidden md:block absolute left-0 top-[50%] -translate-y-1/2 z-10 cursor-pointer">
             <PrevArrow />
           </div>
-          <div className="swiper-button-next-special hidden md:block absolute right-0 top-[40%] -translate-y-1/2 z-10 cursor-pointer">
+          <div className="swiper-button-next-special hidden md:block absolute right-0 top-[50%] -translate-y-1/2 z-10 cursor-pointer">
             <NextArrow />
           </div>
         </div>
