@@ -10,6 +10,7 @@ import Contact from './components/pages/Contact';
 import Form from './components/pages/Form';
 import MyAccount from './components/pages/MyAccount';
 import Login from './components/pages/Login';
+import Checkout from './components/pages/CheckOut';
 
 const App = () => {
  
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/myaccount" element={<MyAccount />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<Error />} />
         </Route>
       </Routes>
