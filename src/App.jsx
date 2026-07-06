@@ -11,6 +11,7 @@ import Form from './components/pages/Form';
 import MyAccount from './components/pages/MyAccount';
 import Login from './components/pages/Login';
 import Checkout from './components/pages/CheckOut';
+import Signup from './components/pages/Signup';
 
 const App = () => {
  
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/myaccount" element={<MyAccount />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/form" element={<Form />} />
