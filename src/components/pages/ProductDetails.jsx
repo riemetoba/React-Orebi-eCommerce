@@ -10,6 +10,7 @@ import productDetailOne from "/src/assets/specialOne.png";
 import productDetailTwo from "/src/assets/specialTwo.png";
 import productDetailThree from "/src/assets/specialThree.png";
 import productDetailFour from "/src/assets/specialFour.png";
+import Counter from "../layouts/Counter";
 
 const ProductDetails = () => {
   const [activeTab, setActiveTab] = useState("reviews");
@@ -94,10 +95,8 @@ const ProductDetails = () => {
               <span className="font-bold text-base text-deepBlack min-w-20">
                 Quant:
               </span>
-              <div className="flex items-center border border-[#F0F0F0] px-4 py-1.5 text-sm text-[#767676] gap-x-6">
-                <span className="cursor-pointer font-medium">-</span>
-                <span>1</span>
-                <span className="cursor-pointer font-medium">+</span>
+              <div className="font-DM text-sm md:text-base border border-[#F0F0F0] py-1.5 px-2 w-[100px] md:w-[130px]">
+                <Counter />
               </div>
             </div>
 

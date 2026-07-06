@@ -22,7 +22,6 @@ const Counter = () => {
           <div className="flex justify-between">
             <button
               aria-label="Decrement value"
-              // onClick={() => dispatch(decrement())}
               onClick={handleDecrement}
             >
               <FiMinus />
