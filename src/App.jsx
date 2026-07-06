@@ -12,6 +12,7 @@ import MyAccount from './components/pages/MyAccount';
 import Login from './components/pages/Login';
 import Checkout from './components/pages/CheckOut';
 import Signup from './components/pages/Signup';
+import ProductDetails from './components/pages/ProductDetails';
 
 const App = () => {
  
@@ -22,6 +23,7 @@ const App = () => {
         <Route path ="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/productdetails" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
